@@ -1,0 +1,34 @@
+{
+  "name": "@devanshj/pipe",
+  "version": "0.0.1",
+  "description": "A pipeline operator",
+  "type": "module",
+  "main": "dist/devanshj-pipe.cjs.js",
+  "module": "dist/devanshj-pipe.esm.js",
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
+  "files": [
+    "dist",
+    "react"
+  ],
+  "author": {
+    "name": "Devansh Jethmalani",
+    "email": "jethmalani.devansh@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devanshj/pipe.git"
+  },
+  "scripts": {
+    "postinstall": "preconstruct dev"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.28.5",
+    "@preconstruct/cli": "^2.8.12",
+    "typescript": "^5.9.3"
+  }
+}
