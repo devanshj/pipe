@@ -1,6 +1,6 @@
 {
   "name": "@devanshj/pipe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A pipeline operator",
   "type": "module",
   "main": "dist/devanshj-pipe.cjs.js",
@@ -21,9 +21,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devanshj/pipe.git"
-  },
-  "scripts": {
-    "postinstall": "preconstruct dev"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.28.5",
