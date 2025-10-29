@@ -11,8 +11,7 @@
     ]
   },
   "files": [
-    "dist",
-    "react"
+    "dist"
   ],
   "author": {
     "name": "Devansh Jethmalani",
