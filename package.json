@@ -1,14 +1,24 @@
 {
   "name": "@devanshj/pipe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A pipeline operator",
-  "type": "module",
   "main": "dist/devanshj-pipe.cjs.js",
   "module": "dist/devanshj-pipe.esm.js",
+  "exports": {
+    ".": {
+      "module": "./dist/devanshj-pipe.esm.js",
+      "import": "./dist/devanshj-pipe.cjs.mjs",
+      "default": "./dist/devanshj-pipe.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
   "preconstruct": {
     "entrypoints": [
       "index.ts"
-    ]
+    ],
+    "exports": {
+      "importConditionDefaultExport": "default"
+    }
   },
   "files": [
     "dist"
